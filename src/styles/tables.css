@@ -1,0 +1,121 @@
+/* ===================== Comparison Table ===================== */
+
+.comparison-table-wrapper {
+  overflow-x: auto;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-card-border);
+  margin: 1.5rem 0;
+}
+
+.comparison-table {
+  width: 100%;
+  min-width: 760px;
+  border-collapse: collapse;
+  background: var(--color-card-bg);
+}
+
+.comparison-table caption {
+  text-align: left;
+}
+
+.comparison-table th,
+.comparison-table td {
+  padding: 0.85rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--color-card-border);
+  font-size: 0.92rem;
+  vertical-align: top;
+}
+
+.comparison-table thead th {
+  background: var(--color-navy-800);
+  color: var(--color-aqua-300);
+  position: sticky;
+  top: 0;
+}
+
+.comparison-table tbody th {
+  color: var(--color-aqua-200);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.comparison-table tbody tr:nth-child(even) {
+  background: rgba(31, 195, 195, 0.04);
+}
+
+.comparison-cards {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .comparison-table-wrapper {
+    display: none;
+  }
+  .comparison-cards {
+    display: grid;
+    gap: 1.25rem;
+  }
+  .comparison-card {
+    background: var(--color-card-bg);
+    border: 1px solid var(--color-card-border);
+    border-radius: var(--radius-md);
+    padding: 1.25rem;
+  }
+  .comparison-card dl {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 0.4rem 1rem;
+    font-size: 0.92rem;
+  }
+  .comparison-card dt {
+    color: var(--color-aqua-300);
+    font-weight: 700;
+  }
+  .comparison-card dd {
+    margin: 0;
+    color: var(--color-muted);
+  }
+}
+
+/* ===================== Credit Table ===================== */
+
+.credit-table-wrapper {
+  overflow-x: auto;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-card-border);
+  margin: 1.5rem 0;
+}
+
+.credit-table {
+  width: 100%;
+  min-width: 640px;
+  border-collapse: collapse;
+  background: var(--color-card-bg);
+}
+
+.credit-table th,
+.credit-table td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--color-card-border);
+  font-size: 0.9rem;
+}
+
+.credit-table thead th {
+  background: var(--color-navy-800);
+  color: var(--color-aqua-300);
+}
+
+.source-list {
+  list-style: none;
+  padding-left: 0;
+  display: grid;
+  gap: 0.6rem;
+}
+
+.source-list li {
+  background: rgba(31, 195, 195, 0.06);
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-md);
+}

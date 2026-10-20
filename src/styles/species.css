@@ -1,0 +1,137 @@
+/* ===================== Timeline ===================== */
+
+.timeline {
+  list-style: none;
+  padding-left: 0;
+  margin: 2rem 0;
+  position: relative;
+  border-left: 3px solid rgba(31, 195, 195, 0.35);
+}
+
+.timeline__event {
+  position: relative;
+  padding: 0 0 1.75rem 1.75rem;
+}
+
+.timeline__marker {
+  position: absolute;
+  left: -9px;
+  top: 4px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--color-teal-400);
+  box-shadow: 0 0 0 4px rgba(31, 195, 195, 0.2);
+}
+
+.timeline__period {
+  color: var(--color-aqua-300);
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-bottom: 0.25rem;
+}
+
+.timeline__content h4 {
+  margin: 0 0 0.4rem;
+}
+
+/* ===================== Thresher Overview ===================== */
+
+.thresher-overview__image .credited-image__frame {
+  min-height: 260px;
+}
+
+/* ===================== Species Accordion ===================== */
+
+.species-accordion {
+  margin-top: 1.5rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.species-accordion__item {
+  background: var(--color-card-bg);
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.species-accordion__item h3 {
+  margin: 0;
+}
+
+.species-accordion__trigger {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  background: transparent;
+  border: none;
+  color: var(--color-white);
+  font-size: 1.05rem;
+  font-weight: 700;
+  text-align: left;
+  padding: 1.1rem 1.25rem;
+  cursor: pointer;
+}
+
+.species-accordion__trigger:hover,
+.species-accordion__trigger:focus {
+  background: rgba(31, 195, 195, 0.08);
+}
+
+.species-accordion__icon {
+  flex-shrink: 0;
+  font-size: 1.4rem;
+  color: var(--color-teal-400);
+  line-height: 1;
+}
+
+.species-accordion__panel {
+  padding: 0 1.25rem 1.5rem;
+}
+
+.species-detail {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+@media (max-width: 760px) {
+  .species-detail {
+    grid-template-columns: 1fr;
+  }
+}
+
+.species-detail__facts {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.4rem 1rem;
+  margin: 1rem 0;
+  font-size: 0.94rem;
+}
+
+.species-detail__facts dt {
+  color: var(--color-aqua-300);
+  font-weight: 700;
+}
+
+.species-detail__facts dd {
+  margin: 0;
+  color: var(--color-muted);
+}
+
+.status-pill {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  background: rgba(226, 163, 59, 0.18);
+  color: var(--color-status-vulnerable);
+  font-weight: 700;
+  font-size: 0.85rem;
+  border: 1px solid rgba(226, 163, 59, 0.4);
+}

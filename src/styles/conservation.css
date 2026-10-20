@@ -1,0 +1,20 @@
+/* ===================== Conservation Callout ===================== */
+
+.callout {
+  border-radius: var(--radius-lg);
+  padding: 1.75rem;
+  margin-top: 2rem;
+}
+
+.callout--action {
+  background: linear-gradient(135deg, rgba(31, 195, 195, 0.18), rgba(95, 227, 224, 0.08));
+  border: 1px solid rgba(95, 227, 224, 0.4);
+}
+
+.callout--action h3 {
+  margin-top: 0;
+}
+
+.callout--action ul {
+  margin-bottom: 0;
+}
